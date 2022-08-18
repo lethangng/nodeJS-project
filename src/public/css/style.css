@@ -39,3 +39,20 @@ body {
     margin-top: 15px;
     cursor: pointer;
 }
+
+form {
+    display: inline-block;
+}
+
+.update-user-container {
+    padding: 15px;
+}
+
+.update-user-container label {
+    display: block;
+}
+
+.update-user-container .btn-save {
+    margin-top: 15px;
+    cursor: pointer;
+}

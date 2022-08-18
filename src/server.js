@@ -1,7 +1,7 @@
 import express from 'express';
 import configViewEngine from './configs/viewEngine';
 import initWebRoute from './route/web';
-// import connection from './configs/connectDB';
+import initAPIRoute from './route/api';
 
 require('dotenv').config();
 
@@ -18,6 +18,8 @@ configViewEngine(app);
 // init web route
 initWebRoute(app);
 
+// init API route
+initAPIRoute(app);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
