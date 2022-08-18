@@ -17,21 +17,30 @@
     </div>
     
     <div class="upload-file-container">
+      <h1>Handing File Uploads using Express.js anh Multer</h1>
         <form action="/upload-profile-pic" enctype="multipart/form-data" method="POST">
             <div>
-                <label for="">Avatar:</label>
-                <input type="file" name="profile_pic">
+                <h3>Upload single file:</h3>
+                <div>
+                  <span>Upload yoor profile picture:</span>
+                  <input type="file" name="profile_pic">
+                </div>
             </div> 
 
             <div>
-                <button class="btn-save" type="submit">Save files</button>
+                <button class="btn-save" type="submit">Upload</button>
             </div>
         </form>
 
+        <hr>
+
         <form action="/upload-multiple-images" enctype="multipart/form-data" method="POST">
             <div>
-                <label for="">Avatar:</label>
-                <input type="file" name="multiple_images" multiple>
+                <h3>Upload Multiple File:</h3>
+                <div>
+                  <span>Select multiplpe file:</span>
+                  <input type="file" name="multiple_images" multiple>
+                </div>
             </div> 
 
             <div>

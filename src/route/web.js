@@ -26,7 +26,7 @@ const imageFilter = function (req, file, cb) {
     cb(null, true);
 };
 
-let upload = multer({ storage: storage, fileFilter: imageFilter });
+const upload = multer({ storage: storage, fileFilter: imageFilter });
 
 const initWebRoute = (app) => {
     router.get('/', homeController.getHomePage);
@@ -39,6 +39,7 @@ const initWebRoute = (app) => {
 
     router.get('/upload', homeController.getUploadFilePage);
     router.post('/upload-profile-pic', upload.single('profile_pic'), homeController.handleUploadFile);
+    router.post('/upload-multiple-images', upload.array('multiple_images', 3), homeController.handleUploadMultipleFiles);
 
     router.get('/about', (req, res) => {
         res.send(`I'm Nang!`)

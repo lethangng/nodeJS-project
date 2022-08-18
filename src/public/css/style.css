@@ -40,10 +40,6 @@ body {
     cursor: pointer;
 }
 
-form {
-    display: inline-block;
-}
-
 .update-user-container {
     padding: 15px;
 }
@@ -63,4 +59,8 @@ form {
 
 .upload-file-container label {
     display: block;
+}
+
+hr {
+    border-top: 3px solid #bbb !important;
 }
