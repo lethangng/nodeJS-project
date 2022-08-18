@@ -52,7 +52,15 @@ form {
     display: block;
 }
 
-.update-user-container .btn-save {
+.btn-save {
     margin-top: 15px;
     cursor: pointer;
+}
+
+.upload-file-container {
+    padding: 15px;
+}
+
+.upload-file-container label {
+    display: block;
 }
